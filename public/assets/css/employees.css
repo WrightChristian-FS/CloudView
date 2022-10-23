@@ -1,0 +1,21 @@
+.product-detail .desc{
+    margin-bottom: 15px;
+}
+.assets-section {
+    width: 250px;
+}
+.sidebar .nav-link.active{
+    color: #618FCB !important;
+}
+.sidebar .nav-link.active svg path{
+    fill: #618FCB !important;
+}
+
+@media (max-width: 767px){
+    .assets-section {
+        width: 200px;
+    }
+    .employee-cards{
+        flex-direction: row-reverse;
+    } 
+}

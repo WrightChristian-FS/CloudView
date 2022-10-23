@@ -1,0 +1,21 @@
+.carousel .carousel-item h4{
+    font-size: 20px !important;
+}
+/* .login-page .left .carousel-section {
+    padding: 0 50px !important;
+} */
+.carousel-section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body{
+    height: 100%;
+}
+
+@media (max-width: 1200px){
+    body{
+        height: auto;
+    }
+}

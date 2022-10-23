@@ -1,0 +1,264 @@
+.sidebar .nav-link.active{
+    color: #618FCB !important;
+}
+.sidebar .nav-link.active svg path{
+    fill: #618FCB !important;
+}
+
+
+
+.user-detail{
+    margin-top: 94px;
+    margin-bottom: 160px;
+}
+.user-detail h2{
+    font-size: 56px;
+    font-family: 'roboto';
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+}
+.user-detail div{
+    font-size: 33px;
+    font-family: 'roboto';
+    color: #1F2B37;
+    opacity: .91;
+}
+
+.user-information > div{
+    margin-bottom: 40px;
+}
+
+.user-information .title,
+.user-information .desc{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'roboto';
+    color: #1F2B37;
+    opacity: .91;
+}
+.user-information .desc{
+    font-size: 20px;
+    font-weight: 400;
+}
+.assigned-section{
+    margin-top: 164px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 185px;
+}
+.assigned-section h3{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'roboto';
+    color: #1F2B37;
+    opacity: .91;
+    margin-bottom: 118px;
+}
+
+.assigned-section .card{
+    border: .2px solid #707070;
+    border-radius: 0;
+    text-align: center;
+    width: 146px;
+    height: 163px;
+}
+.assigned-section .card-body{
+    background: #618FCB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.assigned-section .card-title{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'roboto';
+    color: #1F2B37;
+    opacity: .91;
+}
+.accordion {
+    min-height: 275px;
+}
+.accordion .accordion-item{
+    width: 287px;
+    border: 1px solid #1F2B37;
+    border-radius: 0;
+}
+.accordion-button:not(.collapsed){
+    background: transparent;
+    box-shadow: unset;
+}
+.accordion-header{
+    position: relative;
+    height: 30px;
+}
+.accordion-header .accordion-button{
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    right: -35px;
+    top: 3px;
+    border: 0;
+    padding: 0;
+    width: fit-content;
+}
+.accordion .title{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'roboto';
+    color: #1F2B37;
+    opacity: .91;
+    margin-bottom: 8px;
+}
+
+.accordion-button::after{
+    background-image: url('../images/icons/icons-plus.png');
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('../images/icons/icons-plus-minus.png');
+    transform: rotate(0);
+}
+
+.accordion-collapse{
+    margin-top: -30px;
+}
+
+.accordion .item{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'roboto';
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.accordion .item.active{
+    background-color: rgb(243, 115, 91, 25%);
+}
+.accordion-body{
+    padding-left: 0;
+    padding-right: 0;
+    height: 273px;
+    overflow: auto;
+}
+.history-notes-section{
+    font-family: 'roboto';
+}
+.history h4{
+    font-size: 30px;
+    color: #1F2B37;
+    opacity: .91;
+    margin-bottom: 67px;
+    text-align: center;
+}
+.notes h4{
+    margin-bottom: 101px;
+}
+.history-notes-section{
+    margin-bottom: 54px;
+}
+.history-notes-section .history ul{
+    list-style: none;
+}
+.history-notes-section .history li{
+    border-bottom: .4px solid #707070;
+    margin-bottom: 20px;
+    color: #1F2B37;
+    opacity: .91;
+}
+.history-notes-section .history li:last-child{
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.history-notes-section .history li .date{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.history-notes-section .history li .title{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+.history-notes-section .history li .desc{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+.notes .btn{
+    border-radius: 3px;
+    width: 167px;
+    height: 57px;
+    font-size: 16px;
+    font-family: 'raleway';
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    margin-top: 74px;
+}
+
+
+@media (max-width: 1550px){
+    /* detailed employee */
+
+    .main .nav .search-bar input{
+        min-width: 440px !important;
+    }
+    .user-detail h2 {
+        font-size: 48px !important;
+    }
+    .user-detail div {
+        font-size: 26px !important;
+    }
+}
+
+@media (max-width: 767px){
+    .user-detail h2 {
+        font-size: 30px !important;
+    }
+    .user-detail div {
+        font-size: 16px !important;
+    }
+    .user-information .title, .user-information .desc {
+        font-size: 16px;
+    }
+    .user-information .desc {
+        font-size: 14px;
+    }
+    .accordion .title {
+        font-size: 16px;
+    }
+    /* .accordion >div{
+        flex-wrap: wrap;
+    } */
+    .accordion >div>div{
+        width: 100%;
+    }
+    .user-detail {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .assigned-section {
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 140px;
+    }
+    .assigned-section >div{
+        flex-wrap: wrap;
+    }
+    .assigned-section .card{
+        margin-bottom: 69px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .accordion .accordion-item {
+        width: 160px;
+    }
+    .accordion .item {
+        min-height: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific Asset Type Dashboard | CLOUD VIEW</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="stylesheet" href="./public/assets/css/dashboard.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-orange">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./public/assets/images/header-logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="./dashboard.html" aria-selected="true">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./employees.html">
+                                <span>Employees</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./asset-dashboard.html">
+                                <span>Assets</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sites.html">
+                                <span>Sites</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sign-in.html">login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER -->
+    
+    <div class="dashboard d-flex">
+        <div class="sidebar">
+            <div class="text-center sidebar-logo">
+                <img src="./public/assets/images/dashboard-logo.svg" alt="">
+            </div>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./dashboard.html" aria-selected="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24.86" height="17.293" viewBox="0 0 24.86 17.293">
+                            <path id="noun-toolbox-1376938-F3735B" d="M205.056,316.032v.36H202.39v-1.477a1.354,1.354,0,0,0-1.333-1.333h-5.224a1.354,1.354,0,0,0-1.333,1.333v1.477h-2.666v-.36h1.081v-1.225a2.814,2.814,0,0,1,2.81-2.81h5.4a2.814,2.814,0,0,1,2.81,2.81v1.225Zm1.117,5.512v1.225a.723.723,0,0,1-.721.721h-1.045a.723.723,0,0,1-.721-.721v-1.225H193.239v1.225a.723.723,0,0,1-.721.721h-1.045a.723.723,0,0,1-.721-.721v-1.225h-4.612v6.2a1.538,1.538,0,0,0,1.549,1.549h21.473a1.538,1.538,0,0,0,1.549-1.549v-6.2Zm3.134-4.972H187.546A1.538,1.538,0,0,0,186,318.122V320.9h4.72V320.1a.723.723,0,0,1,.721-.721h1.045a.723.723,0,0,1,.721.721v.793h10.448V320.1a.723.723,0,0,1,.721-.721h1.045a.723.723,0,0,1,.721.721v.793h4.72v-2.774a1.537,1.537,0,0,0-1.549-1.549Zm-16.429,6.161V320.1a.4.4,0,0,0-.4-.4h-1.045a.4.4,0,0,0-.4.4v2.63a.4.4,0,0,0,.4.4h1.045A.4.4,0,0,0,192.878,322.733Zm12.97,0V320.1a.4.4,0,0,0-.4-.4h-1.045a.4.4,0,0,0-.4.4v2.63a.4.4,0,0,0,.4.4h1.045A.4.4,0,0,0,205.848,322.733Z" transform="translate(-185.997 -311.997)" fill="#f9f9fa" opacity="0.69"/>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./employees.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.124" height="21.682" viewBox="0 0 20.124 21.682">
+                            <g id="Group_167" data-name="Group 167" transform="translate(-77.911 -37.5)">
+                              <path id="Path_38" data-name="Path 38" d="M294.572,37.5a6,6,0,1,0,6,6A6.013,6.013,0,0,0,294.572,37.5Z" transform="translate(-206.599)" fill="#f9f9fa" opacity="0.69"/>
+                              <path id="Path_39" data-name="Path 39" d="M82.915,768.03a4.491,4.491,0,0,0-3.623,2.107,8.4,8.4,0,0,0-1.382,4.775h0a.723.723,0,0,0,.72.72H97.315a.723.723,0,0,0,.72-.72,8.4,8.4,0,0,0-1.376-4.775,4.5,4.5,0,0,0-3.628-2.107Z" transform="translate(0 -716.451)" fill="#f9f9fa" opacity="0.69"/>
+                            </g>
+                        </svg>
+                        <span>Employees</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./asset-dashboard.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.124" height="17.286" viewBox="0 0 20.124 17.286">
+                            <path id="Path_40" data-name="Path 40" d="M46.148,267.3h6.608l-1.391,2.641H50.244V271.1h11.94v-1.152H61.061L59.67,267.3h6.6V253.81H46.148Z" transform="translate(-46.148 -253.81)" fill="#f9f9fa" opacity="0.69"/>
+                        </svg>
+                        <span>Assets</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sites.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.107" height="23" viewBox="0 0 22.107 23">
+                            <defs>
+                              <clipPath id="clip-path">
+                                <rect width="22.107" height="23" fill="none"/>
+                              </clipPath>
+                            </defs>
+                            <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+                              <g transform="translate(-6.912 -420)">
+                                <path id="noun-office-5221460-F3735B" d="M161.177,133.1a.738.738,0,0,1-.738.738h-1.427a.738.738,0,0,1-.738-.738v-1.427a.738.738,0,0,1,.738-.738h1.427a.738.738,0,0,1,.738.738Zm0,2.927a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm0,4.466a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-6.7,1.451a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.428a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-7.369,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.428a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm7.369-3.573a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738V139.8a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-3.684,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738V139.8a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-3.684,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738V139.8a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm7.369-3.8a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-3.684,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-3.684,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm9.49-7.334h0a.728.728,0,0,0-.688-.773h-1.435a.806.806,0,0,0-.78.773v1.435a.739.739,0,0,0,.78.694h1.435a.66.66,0,0,0,.688-.694Zm4.578,0h0a.787.787,0,0,0-.758-.773h-1.435a.746.746,0,0,0-.71.773v1.435a.678.678,0,0,0,.71.694h1.435a.72.72,0,0,0,.758-.694Zm2.29-3.788c.408,0,.613.42.613.828v22.172H141.973V132.4a.782.782,0,0,1,.835-.682h7.986v-7.434a.94.94,0,0,1,.868-.828ZM154.448,144.9h.811V133.172H143.424V144.9h4.466v-3.087c0-.3.439-.6.738-.6h1.8c.3,0,.364.3.364.6V144.9Zm8.18-19.874H152.356v6.7h3.732a.6.6,0,0,1,.623.682v12.493h5.917Z" transform="translate(-135.061 296.542)" fill="#f9f9fa" opacity="0.69"/>
+                              </g>
+                            </g>
+                        </svg>
+                        <span>Sites</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="main w-100">
+            <h1>ASSETS</h1>
+
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="./dashboard.html">Overview</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="./employees.html">Employees</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" href="./asset-dashboard.html">Assets</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="./sites.html">Sites</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#">Reports</a>
+                </li>
+
+                <div class="search-bar position-relative ms-auto">
+                    <input type="text" class="form-control" placeholder="Type here to search ">
+                    <img src="./public/assets/images/icons/search.svg" alt="">
+                </div>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
+                    <div class="overview-section d-flex align-items-center flex-wrap">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-image">
+                                    <img src="./public/assets/images/icons/users-large.svg" alt="">
+                                </div>
+                                <div class="card-title">150</div>
+                                <div class="card-text">users</div>
+                            </div>
+                            <div class="card-link">
+                                <a href="">View More</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-image">
+                                    <img src="./public/assets/images/icons/assets-large.svg" alt="">
+                                </div>
+                                <div class="card-title">200</div>
+                                <div class="card-text">assets</div>
+                            </div>
+                            <div class="card-link bg-blue">
+                                <a href="">View More</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-image">
+                                    <img src="./public/assets/images/icons/sites-large.svg" alt="">
+                                </div>
+                                <div class="card-title">3</div>
+                                <div class="card-text">sites</div>
+                            </div>
+                            <div class="card-link bg-green">
+                                <a href="">View More</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-image mb-4 pb-2">
+                                    <img src="./public/assets/images/icons/plus-large.svg" alt="">
+                                </div>
+                                <div class="card-text">new category</div>
+                            </div>
+                            <div class="card-link bg-purple">
+                                <a href="">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="assets-section">
+                            <h3 class="text-center bg-orange text-white text-uppercase">asset values</h3>
+                            <div class="px-3">
+                                <table class="table-responsive w-100">
+                                <thead>
+                                    <tr>
+                                        <th>type</th>
+                                        <th>total value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Computers</td>
+                                        <td>$15,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Laptops</td>
+                                        <td>$7,153</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Monitors</td>
+                                        <td>$8,159</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Headsets</td>
+                                        <td>$1,300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell Phones</td>
+                                        <td>$23,055</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td class="total-amount">$54,667</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="assets-section large">
+                            <h3 class="text-center bg-orange text-white text-uppercase">Expiring warrenties</h3>
+                            <div class="px-3">
+                                <table class="table-responsive w-100">
+                                <thead>
+                                    <tr>
+                                        <th>type</th>
+                                        <th>device name</th>
+                                        <th>make</th>
+                                        <th>expiration date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Computers</td>
+                                        <td>PC123</td>
+                                        <td>Dell</td>
+                                        <td>12/05/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Laptops</td>
+                                        <td>NB456</td>
+                                        <td>Dell</td>
+                                        <td>10/25/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell Phone</td>
+                                        <td>CEO Cell</td>
+                                        <td>Apple</td>
+                                        <td>11/5/2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Laptop</td>
+                                        <td>NB785</td>
+                                        <td>Lenovo</td>
+                                        <td>2/5/2023</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="assets-section me-0">
+                            <h3 class="text-center bg-orange text-white text-uppercase">new view</h3>
+                            <a type="button" class="d-flex align-items-center justify-content-center h-75 py-4 mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="126.97" height="126.97" viewBox="0 0 138.2 138.2">
+                                    <path id="noun-add-1776296-F3735B" d="M535.231,479.09v56.143H479.088v25.913h56.143V617.29h25.913V561.147h56.143V535.233H561.145V479.09Z" transform="translate(-479.088 -479.09)" fill="#F3725B"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-employees" role="tabpanel" aria-labelledby="pills-employees-tab">
+                    Employees Section
+                </div>
+                
+                <div class="tab-pane fade show active" id="pills-assets" role="tabpanel" aria-labelledby="pills-assets-tab">
+
+                    <!-- Assets Specific Type -->
+    
+                        <div class="assets-specific-type">
+                            <div class="d-flex flex-wrap">
+                                <div class="assets-section asset-large">
+                                    <h3 class="text-center bg-orange text-white text-uppercase">NB1234</h3>
+                                    <div class="px-3 product-detail">
+                                        <div class="row my-4 pb-2">
+                                            <div class="col-3">
+                                                <div class="title">Serial Number</div>
+                                                <div class="desc">8XK39</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="title">Location</div>
+                                                <div class="desc">HQ</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="title">Warrant Expiration</div>
+                                                <div class="desc">10-22-2022</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="title">Special Software</div>
+                                                <div class="desc">None</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pb-4">
+                                            <div class="col-3">
+                                                <div class="title">Status</div>
+                                                <div class="desc">Assigned</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="title">Assigned To</div>
+                                                <div class="desc">Alex Amar</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="title">Network</div>
+                                                <div class="desc">Wifi</div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="title">Port</div>
+                                                <div class="desc">A-24</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-end pb-3 mb-1">
+                                            <a href="" class="more text-decoration-underline text-black-50">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="assets-section asset-small me-0">
+                                    <h3 class="text-center bg-orange text-white text-uppercase">new asset</h3>
+                                    <a href="./new-asset.html" class="d-flex align-items-center justify-content-center h-75 py-4 mt-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="126.97" height="126.97" viewBox="0 0 138.2 138.2">
+                                            <path id="noun-add-1776296-F3735B" d="M535.231,479.09v56.143H479.088v25.913h56.143V617.29h25.913V561.147h56.143V535.233H561.145V479.09Z" transform="translate(-479.088 -479.09)" fill="#F3725B"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="assets-section asset-large w-100 mb-3">
+                                    <h3 class="text-center bg-orange text-white text-uppercase">laptops</h3>
+                                    <div class="px-3 new-table">
+                                        <table class="table-responsive w-100" id="my-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>name</th>
+                                                    <th>site</th>
+                                                    <th>computer type</th>
+                                                    <th>name</th>
+                                                    <th>cell phone</th>
+                                                    <th>hire date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Alex Amar</td>
+                                                    <td>Alpha</td>
+                                                    <td>Computer</td>
+                                                    <td>PC123</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bryan James</td>
+                                                    <td>Alpha</td>
+                                                    <td>Laptop</td>
+                                                    <td>PC456</td>
+                                                    <td>174-452-4860</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>King Sanchez</td>
+                                                    <td>Omega</td>
+                                                    <td>Tablet</td>
+                                                    <td>NB789</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alex Amar</td>
+                                                    <td>Alpha</td>
+                                                    <td>Computer</td>
+                                                    <td>PC123</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bryan James</td>
+                                                    <td>Alpha</td>
+                                                    <td>Laptop</td>
+                                                    <td>PC456</td>
+                                                    <td>174-452-4860</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>King Sanchez</td>
+                                                    <td>Omega</td>
+                                                    <td>Tablet</td>
+                                                    <td>NB789</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alex Amar</td>
+                                                    <td>Alpha</td>
+                                                    <td>Computer</td>
+                                                    <td>PC123</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bryan James</td>
+                                                    <td>Alpha</td>
+                                                    <td>Laptop</td>
+                                                    <td>PC456</td>
+                                                    <td>174-452-4860</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>King Sanchez</td>
+                                                    <td>Omega</td>
+                                                    <td>Tablet</td>
+                                                    <td>NB789</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alex Amar</td>
+                                                    <td>Alpha</td>
+                                                    <td>Computer</td>
+                                                    <td>PC123</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bryan James</td>
+                                                    <td>Alpha</td>
+                                                    <td>Laptop</td>
+                                                    <td>PC456</td>
+                                                    <td>174-452-4860</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>King Sanchez</td>
+                                                    <td>Omega</td>
+                                                    <td>Tablet</td>
+                                                    <td>NB789</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alex Amar</td>
+                                                    <td>Alpha</td>
+                                                    <td>Computer</td>
+                                                    <td>PC123</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bryan James</td>
+                                                    <td>Alpha</td>
+                                                    <td>Laptop</td>
+                                                    <td>PC456</td>
+                                                    <td>174-452-4860</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>King Sanchez</td>
+                                                    <td>Omega</td>
+                                                    <td>Tablet</td>
+                                                    <td>NB789</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alex Amar</td>
+                                                    <td>Alpha</td>
+                                                    <td>Computer</td>
+                                                    <td>PC123</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bryan James</td>
+                                                    <td>Alpha</td>
+                                                    <td>Laptop</td>
+                                                    <td>PC456</td>
+                                                    <td>174-452-4860</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>King Sanchez</td>
+                                                    <td>Omega</td>
+                                                    <td>Tablet</td>
+                                                    <td>NB789</td>
+                                                    <td>174-452-4861</td>
+                                                    <td>12/05/2022</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="pagination">
+                                    <ol id="numbers"></ol>
+                                </div>
+                            </div>
+                        </div>
+    
+                    <!-- Assets Specific Type -->
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-sites" role="tabpanel" aria-labelledby="pills-sites-tab">
+                    Sites Section
+                </div>
+
+                <div class="tab-pane fade" id="pills-reports" role="tabpanel" aria-labelledby="pills-reports-tab">
+                    Reports section
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+        <footer>
+            <p class="text-center franklin">© Christian Wright Development </p>
+        </footer>
+    <!-- FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/assets/js/index.js"></script>
+</body>
+</html>

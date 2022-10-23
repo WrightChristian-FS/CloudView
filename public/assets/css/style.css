@@ -1,0 +1,719 @@
+*{
+    transition: all .3s ease-in-out;
+    letter-spacing: 2px;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'franklin';
+    src: url('../fonts/Franklin\ Gothic\ Book\ Regular.ttf');
+}
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway\ Regular.ttf');
+}
+@font-face {
+    font-family: 'cascadia';
+    src: url('../fonts/Cascadia.ttf');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+
+html{
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
+}
+/* body{
+    height: 100%;
+} */
+
+.raleway{
+    font-family: 'raleway' !important;
+}
+.franklin{
+    font-family: 'franklin' !important;
+}
+.cascadia{
+    font-family: 'cascadia' !important;
+}
+
+
+/* Colors */
+.text-orange{
+    color: #F3735B !important;
+}
+.bg-orange{
+    background: #F3735B !important;
+}
+.text-blue{
+    color: #618FCB !important;
+}
+.bg-blue{
+    background: #618FCB !important;
+}
+.bg-green{
+    background: #8DCC95 !important;
+}
+.text-green{
+    color: #8DCC95 !important;
+}
+.light-white{
+    color: #F9F9FA !important;
+}
+.text-dark-green-50{
+    color: #1F2B37;
+    opacity: .48;
+}
+.bg-light-white{
+    background: #F9F9FA !important;
+}
+.bg-purple{
+    background: #1F2B37 !important;
+}
+.text-purple{
+    color: #1F2B37 !important;
+}
+.text-black-50{
+    color: black !important;
+    opacity: .53;
+}
+.dark-border{
+    border: 1px solid #707070 !important;
+}
+.text-grey{
+    color: #F8F8F8 !important;
+}
+.bg-grey{
+    background: #F8F8F8 !important;
+}
+
+.btn:focus,
+.form-control:focus{
+    box-shadow: unset !important;
+    outline: 0;
+    border-color: #F3735B !important;
+}
+
+
+/* HEADER */
+.navbar{
+    padding: 5px 0;
+}
+.navbar .nav-link{
+    color: #f9f9fa !important;
+    font-family: 'raleway';
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* BANNER */
+.banner{
+    background-image: url('../images/banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 50px;
+    min-height: 1082px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.banner .heading-section h1{
+    font-size: 118px;
+    font-weight: bold;
+}
+.banner .heading-section p{
+    font-size: 39px;
+    color: black;
+    margin-top: 79px;
+}
+.banner .heading-section .btn{
+    font-size: 53px;
+    height: 88px;
+    border-radius: 25px;
+    margin-top: 81px;
+}
+
+.how-it-works{
+    margin-top: 189px;
+    padding: 0 170px;
+}
+.how-it-works .card{
+    margin-bottom: 24px;
+}
+.how-it-works h2,
+.features h2,
+.plans h2{
+    font-size: 79px;
+    font-weight: 500;
+    margin-bottom: 171px;
+    font-family: 'raleway';
+    text-transform: uppercase;
+    text-align: center;
+}
+.features h2{
+    margin-top: 200px;
+}
+.features{
+    padding: 0 72px;
+}
+.features .card{
+    margin-bottom: 24px;
+}
+.plans h2{
+    margin-top: 243px;
+    margin-bottom: 101px;
+}
+
+.card-div{
+    width: 432px;
+    margin: auto;
+    text-align: center;
+}
+.card-div p{
+    margin-top: 72px;
+    font-size: 32px;
+    font-family: "franklin";
+}
+
+
+/* PLANS */
+.plans{
+    margin-bottom: 187px;
+}
+.plans .nav-pills{
+    max-width: 720px;
+    height: 89px;
+    margin: auto;
+    border-radius: 11px;
+}
+.plans .nav-pills .nav-item{
+    display: flex;
+    align-items: center;
+    width: 49%;
+}
+.plans .nav-pills .nav-link{
+    background: #F9F9FA;
+    color: #F3735B;
+    font-size: 40px;
+    font-family: 'franklin';
+    width: 100%;
+    border-radius: 11px;
+}
+.plans .nav-pills .nav-link.active{
+    background: transparent !important;
+    color: #f9f9fa !important;
+}
+.plans .tab-content{
+    margin-top: 100px;
+}
+.plans .tab-content .tab-pane{
+    padding: 0 85px;
+}
+.plans .card{
+    border: 1px solid #707070;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: 0 10px 10px rgb(243, 115, 91, 16%);
+    min-width: 515px;
+    margin-bottom: 47px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.plans .card .card-body{
+    padding-top: 82px;
+    padding-bottom: 66px;
+}
+.plans .card .card-body p{
+    font-size: 40px;
+    font-family: 'franklin';
+    color: #000;
+    margin-bottom: 37px;    
+}
+.plans .card .card-body .price{
+    font-size: 137px;
+    color: #F3735B;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 105px;
+}
+.plans .card .card-body .choose-month{
+    font-size: 30px;
+    font-family: 'franklin';
+    color: #000;
+    opacity: .53;
+}
+.plans .card .card-body hr{
+    margin: 40px auto !important;
+    background: #707070;
+    width: 324px;
+}
+.plans .card .card-body ul{
+    list-style: none;
+    font-size: 40px;
+    font-family: 'franklin';
+    color: #000;
+}
+.plans .card .card-body ul li{
+    margin-bottom: 49px;
+}
+.plans .card .card-body ul li:last-child{
+    margin-bottom: 60px;
+}
+.plans .card .card-body .btn{
+    width: 313px;
+    margin: auto;
+    height: 105px;
+    text-transform: uppercase;
+    color: #F9F9FA;
+    font-family: 'raleway';
+    font-size: 30px;
+    font-weight: 500;
+    background: #F3735B;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+footer{
+    background: #F8F8F8;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0; */
+}
+footer p {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+sup{
+    top: -0.55em;
+    font-size: 80px;
+}
+
+
+
+
+/* LOGIN PAGE CSS START FROM HERE */
+
+/* CAROUSEL */
+.carousel .carousel-item h4{
+    text-align: center;
+    font-size: 39px;
+    font-family: 'franklin';
+    font-weight: 400;
+}
+.carousel .carousel-item img{
+    width: 100% !important;
+}
+.carousel-indicators{
+    /* bottom: -100px; */
+    position: static !important;
+    margin-bottom: 0 !important;
+    margin-top: 60px;
+}
+.carousel-indicators button{
+    width: 19px !important;
+    height: 19px !important;
+    background-color: #1F2B37 !important;
+    opacity: .6 !important;
+    border-radius: 100%;
+    border: 0 !important;
+}
+.carousel-indicators button.active{
+    opacity: 1 !important;
+}
+.login-page{
+    height: 100%;
+}
+.login-page .left,
+.login-page .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-page .left{
+    background: #D9D7D7;
+}
+.login-page .left .carousel-section{
+    padding: 0 92px;
+}
+.login-page .left .carousel-section .carousel img{
+    width: 100%;
+}
+.login-page .right form{
+    min-width: 70%;
+    margin: auto;
+}
+.login-page .right form h2{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'roboto';
+    margin-bottom: 64px;
+}
+.login-page .right form .form-group{
+    margin-bottom: 33px;
+}
+.login-page .right form .form-group label{
+    font-size: 20px;
+    font-family: 'franklin';
+    margin-bottom: 13px;
+}
+.login-page .right form .form-group input{
+    font-size: 20px;
+    color: #000;
+    font-family: 'franklin';
+    height: 33px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.login-page .right form .form-group input::placeholder{
+    font-size: 20px;
+    color: #000;
+    opacity: .34;
+}
+.login-page .right form .btn{
+    height: 60px;
+    width: 201px;
+    margin: auto;
+    margin-top: 27px;
+    border-radius: 25px;
+    background: #F3735B;
+    color: #F9F9FA;
+    font-size: 35px;
+    font-family: 'roboto';
+}
+
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+.styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+.styled-checkbox + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 13px;
+    height: 14px;
+    background: white;
+    border: 1px solid #707070;
+    margin-top: 2px;
+}
+/* .styled-checkbox:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+} */
+.styled-checkbox:checked + label:before {
+    background: #F3735B;
+}
+.styled-checkbox:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+.styled-checkbox:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+.styled-checkbox:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 9px;
+    width: 2px;
+    background: white;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 transparent;
+    transform: rotate(45deg);
+}
+.checkbox-section label{
+    font-size: 15px !important;
+    opacity: .65;
+}
+
+
+/* specific asset type */
+.assets-specific-type .assets-section.asset-large {
+    min-width: 900px !important;
+}
+
+@media (max-width: 1550px){
+    .banner{
+        min-height: 800px;
+    }
+    .banner .heading-section p {
+        font-size: 32px;
+    }
+    .banner .heading-section h1 {
+        font-size: 100px;
+    }
+    .banner .heading-section .btn{
+        font-size: 46px;
+    }
+    .how-it-works h2, .features h2, .plans h2{
+        font-size: 66px;
+    }
+    .card-div {
+        width: 370px;
+    }
+    .card-div p {
+        font-size: 26px;
+    }
+    .card-div img{
+        width: 180px;
+    }
+
+    .how-it-works, .features {
+        padding: 0 100px;
+    }
+
+    .plans .nav-pills {
+        max-width: 600px;
+    }
+    .plans .card{
+        min-width: 350px;
+    }
+    .plans .card .card-body ul {
+        font-size: 28px;
+    }
+    .plans .card .card-body .btn {
+        width: 250px;
+        font-size: 22px;
+    }
+    .plans .card .card-body .price {
+        font-size: 100px;
+        line-height: 85px;
+    }
+    sup {
+        font-size: 66px;
+    }
+    .plans .card .card-body .choose-month {
+        font-size: 24px;
+    }
+
+    /* Register screen */
+    .login-page .right form .form-group {
+        margin-bottom: 18px;
+    }
+    .login-page .right form .form-group label {
+        margin-bottom: 8px;
+    }
+    .login-page .right form .btn{
+        font-size: 28px;
+        width: 175px;
+    }
+    .login-page .right form h2 {
+        margin-bottom: 48px;
+    }
+
+
+    /* dashboard screen */
+    .overview-section .card {
+        margin-right: 32px !important;
+        width: 215px !important;
+    }
+
+    .main .nav .search-bar input{
+        min-width: 400px !important;
+    }
+
+    .site-cards .card-section {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+    .main .nav .nav-item {
+        margin-right: 36px !important;
+    }
+    /* .navbar {
+        background: #fff !important;
+    } */
+    .navbar-toggler{
+        border: 0;
+    }
+    .navbar-toggler:focus{
+        box-shadow: unset !important;
+    }
+
+    /* specific asset type */
+    .assets-specific-type .assets-section.asset-large {
+        min-width: 680px !important;
+    }
+}
+@media (max-width: 1200px){
+    /* specific asset type */
+    .assets-specific-type .assets-section.asset-large {
+        min-width: 100% !important;
+    }
+}
+@media (max-width: 991px){
+    .login-page{
+        height: 100%;
+    }
+    .login-page .left{
+        display: none !important;
+    }
+    .login-page .right{
+        width: 100%;
+    }
+    .login-page .name-fields .form-group{
+        width: 50%;
+    }
+    .login-page .right form h2 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px){
+    .banner .heading-section h1 {
+        font-size: 40px;
+    }
+    .banner .heading-section p {
+        font-size: 12px;
+        margin-top: 18px;
+    }
+    .banner .heading-section{
+        width: 350px;
+    }
+    .banner {
+        min-height: 256px;
+        padding: 0 20px;
+        padding-left: 80px;
+        background-position: 90%;
+    }
+    .banner .heading-section .btn {
+        font-size: 18px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .how-it-works, .features {
+        padding: 0 30px;
+    }
+    .how-it-works {
+        margin-top: 60px;
+    }
+    .how-it-works h2, .features h2, .plans h2 {
+        font-size: 32px;
+        margin-bottom: 48px;
+    }
+    .card-div{
+        display: flex;
+        align-items: center;
+    }
+    .card-div img {
+        width: 94px;
+    }
+    .card-div p {
+        font-size: 18px;
+        margin: 0;
+        margin-left: 24px;
+    }
+    .features .card-div p {
+        margin-left: 0 !important;
+    }
+    .how-it-works .card,
+    .features .card{
+        margin-bottom: 40px;
+    }
+    .features h2 {
+        margin-top: 32px;
+    }
+    .plans h2 {
+        margin-top: 43px;
+    }
+    .plans .nav-pills {
+        max-width: 304px;
+    }
+    .plans .nav-pills {
+        height: 48px;
+    }
+    .plans .nav-pills .nav-link {
+        font-size: 16px;
+    }
+    .plans .tab-content .tab-pane {
+        padding: 0 15px;
+    }
+    .plans {
+        margin-bottom: 20px;
+    }
+    .plans .card {
+        width: 217px;
+        min-width: 217px;
+        margin: auto;
+        margin-bottom: 45px;
+    }
+    .plans .card .card-body ul {
+        font-size: 16px;
+    }
+    .plans .card .card-body ul li {
+        margin-bottom: 23px;
+    }
+    .plans .card .card-body .price {
+        font-size: 52px;
+        line-height: 44px;
+    }
+    sup {
+        font-size: 32px;
+    }
+    .plans .card .card-body .choose-month {
+        font-size: 12px;
+    }
+    .plans .card .card-body ul li:last-child {
+        margin-bottom: 20px;
+    }
+    .plans .card .card-body .btn {
+        width: 129px;
+        height: 45px;
+        font-size: 12px;
+        padding: 0;
+    }
+    .plans .card .card-body hr {
+        margin: 20px auto !important;
+        width: auto;
+    }
+    .plans .card .card-body p {
+        font-size: 16px;
+    }
+    footer {
+        background: #F8F8F8;
+        height: 29px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+
+    .login-page{
+        height: 100%;
+    }
+    .login-page .right form {
+        min-width: 100%;
+    }
+    .assets-specific-type .product-detail .title{
+        font-size: 12px;
+    }
+    .assets-specific-type .product-detail .title{
+        font-size: 12px;
+    }
+    .login-page .name-fields{
+        display: block !important;
+    }
+    .login-page .name-fields .form-group{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+}

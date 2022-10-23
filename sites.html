@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CLOUD VIEW</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="stylesheet" href="./public/assets/css/dashboard.css">
+    <link rel="stylesheet" href="./public/assets/css/sites.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-orange">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./public/assets/images/header-logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="./dashboard.html" aria-selected="true">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./employees.html">
+                                <span>Employees</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./asset-dashboard.html">
+                                <span>Assets</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sites.html">
+                                <span>Sites</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sign-in.html">login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER -->
+    
+    <div class="dashboard d-flex">
+        <div class="sidebar bg-green">
+            <div class="text-center sidebar-logo">
+                <img src="./public/assets/images/dashboard-logo.svg" alt="">
+            </div>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./dashboard.html" aria-selected="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24.86" height="17.293" viewBox="0 0 24.86 17.293">
+                            <path id="noun-toolbox-1376938-F3735B" d="M205.056,316.032v.36H202.39v-1.477a1.354,1.354,0,0,0-1.333-1.333h-5.224a1.354,1.354,0,0,0-1.333,1.333v1.477h-2.666v-.36h1.081v-1.225a2.814,2.814,0,0,1,2.81-2.81h5.4a2.814,2.814,0,0,1,2.81,2.81v1.225Zm1.117,5.512v1.225a.723.723,0,0,1-.721.721h-1.045a.723.723,0,0,1-.721-.721v-1.225H193.239v1.225a.723.723,0,0,1-.721.721h-1.045a.723.723,0,0,1-.721-.721v-1.225h-4.612v6.2a1.538,1.538,0,0,0,1.549,1.549h21.473a1.538,1.538,0,0,0,1.549-1.549v-6.2Zm3.134-4.972H187.546A1.538,1.538,0,0,0,186,318.122V320.9h4.72V320.1a.723.723,0,0,1,.721-.721h1.045a.723.723,0,0,1,.721.721v.793h10.448V320.1a.723.723,0,0,1,.721-.721h1.045a.723.723,0,0,1,.721.721v.793h4.72v-2.774a1.537,1.537,0,0,0-1.549-1.549Zm-16.429,6.161V320.1a.4.4,0,0,0-.4-.4h-1.045a.4.4,0,0,0-.4.4v2.63a.4.4,0,0,0,.4.4h1.045A.4.4,0,0,0,192.878,322.733Zm12.97,0V320.1a.4.4,0,0,0-.4-.4h-1.045a.4.4,0,0,0-.4.4v2.63a.4.4,0,0,0,.4.4h1.045A.4.4,0,0,0,205.848,322.733Z" transform="translate(-185.997 -311.997)" fill="#f9f9fa" opacity="0.69"/>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./employees.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.124" height="21.682" viewBox="0 0 20.124 21.682">
+                            <g id="Group_167" data-name="Group 167" transform="translate(-77.911 -37.5)">
+                              <path id="Path_38" data-name="Path 38" d="M294.572,37.5a6,6,0,1,0,6,6A6.013,6.013,0,0,0,294.572,37.5Z" transform="translate(-206.599)" fill="#f9f9fa" opacity="0.69"/>
+                              <path id="Path_39" data-name="Path 39" d="M82.915,768.03a4.491,4.491,0,0,0-3.623,2.107,8.4,8.4,0,0,0-1.382,4.775h0a.723.723,0,0,0,.72.72H97.315a.723.723,0,0,0,.72-.72,8.4,8.4,0,0,0-1.376-4.775,4.5,4.5,0,0,0-3.628-2.107Z" transform="translate(0 -716.451)" fill="#f9f9fa" opacity="0.69"/>
+                            </g>
+                        </svg>
+                        <span>Employees</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./asset-dashboard.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.124" height="17.286" viewBox="0 0 20.124 17.286">
+                            <path id="Path_40" data-name="Path 40" d="M46.148,267.3h6.608l-1.391,2.641H50.244V271.1h11.94v-1.152H61.061L59.67,267.3h6.6V253.81H46.148Z" transform="translate(-46.148 -253.81)" fill="#f9f9fa" opacity="0.69"/>
+                        </svg>
+                        <span>Assets</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./sites.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.107" height="23" viewBox="0 0 22.107 23">
+                            <defs>
+                              <clipPath id="clip-path">
+                                <rect width="22.107" height="23" fill="none"/>
+                              </clipPath>
+                            </defs>
+                            <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+                              <g transform="translate(-6.912 -420)">
+                                <path id="noun-office-5221460-F3735B" d="M161.177,133.1a.738.738,0,0,1-.738.738h-1.427a.738.738,0,0,1-.738-.738v-1.427a.738.738,0,0,1,.738-.738h1.427a.738.738,0,0,1,.738.738Zm0,2.927a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm0,4.466a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-6.7,1.451a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.428a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-7.369,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.428a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm7.369-3.573a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738V139.8a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-3.684,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738V139.8a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-3.684,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738V139.8a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm7.369-3.8a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-3.684,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm-3.684,0a.738.738,0,0,0-.738-.738h-1.427a.738.738,0,0,0-.738.738v1.427a.738.738,0,0,0,.738.738h1.427a.738.738,0,0,0,.738-.738Zm9.49-7.334h0a.728.728,0,0,0-.688-.773h-1.435a.806.806,0,0,0-.78.773v1.435a.739.739,0,0,0,.78.694h1.435a.66.66,0,0,0,.688-.694Zm4.578,0h0a.787.787,0,0,0-.758-.773h-1.435a.746.746,0,0,0-.71.773v1.435a.678.678,0,0,0,.71.694h1.435a.72.72,0,0,0,.758-.694Zm2.29-3.788c.408,0,.613.42.613.828v22.172H141.973V132.4a.782.782,0,0,1,.835-.682h7.986v-7.434a.94.94,0,0,1,.868-.828ZM154.448,144.9h.811V133.172H143.424V144.9h4.466v-3.087c0-.3.439-.6.738-.6h1.8c.3,0,.364.3.364.6V144.9Zm8.18-19.874H152.356v6.7h3.732a.6.6,0,0,1,.623.682v12.493h5.917Z" transform="translate(-135.061 296.542)" fill="#f9f9fa" opacity="0.69"/>
+                              </g>
+                            </g>
+                        </svg>
+                        <span>Sites</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="main w-100">
+            <h1>DASHBOARD</h1>
+
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="./dashboard.html">Overview</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="./employees.html">Employees</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="./asset-dashboard.html">Assets</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" href="./sites.html">Sites</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#">Reports</a>
+                </li>
+
+                <div class="search-bar position-relative ms-auto">
+                    <input type="text" class="form-control" placeholder="Type here to search ">
+                    <img src="./public/assets/images/icons/search.svg" alt="">
+                </div>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                
+                <div class="tab-pane fade" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
+                    Overveiw Section    
+                </div>
+
+                <div class="tab-pane fade" id="pills-employees" role="tabpanel" aria-labelledby="pills-employees-tab">
+                    Employees Section
+                </div>
+
+                <div class="tab-pane fade" id="pills-assets" role="tabpanel" aria-labelledby="pills-assets-tab">
+                    Assets Section
+                </div>
+
+                <div class="tab-pane fade show active" id="pills-sites" role="tabpanel" aria-labelledby="pills-sites-tab">
+                    <div class="site-cards">
+                        <div class="bg-green text-center">
+                            <h2>alpha site</h2>
+                        </div>
+                        <div class="card-section d-flex align-items-center justify-content-between">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="73.001" height="68.635" viewBox="0 0 73.001 68.635">
+                                            <g id="Group_151" data-name="Group 151" transform="translate(-20651 2524.72)">
+                                              <path id="Path_44" data-name="Path 44" d="M146.238,264.33H78.411a2.594,2.594,0,0,0-2.587,2.587v50.03a2.594,2.594,0,0,0,2.587,2.587H103.02v8.259H95.366a2.587,2.587,0,0,0,0,5.173h33.91a2.587,2.587,0,0,0,0-5.173h-7.653v-8.259h24.615a2.594,2.594,0,0,0,2.587-2.587v-50.03a2.594,2.594,0,0,0-2.587-2.587Zm-38.045,63.463v-8.256h8.256v8.256Z" transform="translate(20575.176 -2789.05)" fill="#8DCC95"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">152</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="93.995" height="57.679" viewBox="0 0 93.995 57.679">
+                                            <path id="noun-laptop-5222411-F3735B" d="M28.006,273.53H98.772v46.124H28.006Zm-3.085,57.679-8.53-8.713h94l-8.53,8.713Z" transform="translate(-16.391 -273.53)" fill="#8DCC95" fill-rule="evenodd"/>
+                                          </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">35</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="73.116" height="64.483" viewBox="0 0 73.116 64.483">
+                                            <g id="noun-telephone-1709362-F3735B" transform="translate(-26.292 -93.982)">
+                                              <path id="Path_45" data-name="Path 45" d="M182.957,143.791a4.544,4.544,0,0,1-4.548,4.543h-9.657a4.541,4.541,0,0,1-4.545-4.543V98.527a4.545,4.545,0,0,1,4.545-4.545h9.657a4.547,4.547,0,0,1,4.548,4.545Z" transform="translate(-129.127 0)" fill="#8DCC95"/>
+                                              <path id="Path_46" data-name="Path 46" d="M636.373,566.611a2.61,2.61,0,1,1-2.61-2.61,2.611,2.611,0,0,1,2.61,2.61" transform="translate(-566.32 -440.071)" fill="#8DCC95"/>
+                                              <path id="Path_47" data-name="Path 47" d="M635.243,715.961a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-565.262 -579.905)" fill="#8DCC95"/>
+                                              <path id="Path_48" data-name="Path 48" d="M782,865.388a2.609,2.609,0,1,1-2.609-2.609A2.609,2.609,0,0,1,782,865.388" transform="translate(-702.673 -719.812)" fill="#8DCC95"/>
+                                              <path id="Path_49" data-name="Path 49" d="M780.857,715.961a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-701.598 -579.905)" fill="#8DCC95"/>
+                                              <path id="Path_50" data-name="Path 50" d="M926.487,417.215a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-837.949 -300.194)" fill="#8DCC95"/>
+                                              <path id="Path_51" data-name="Path 51" d="M780.857,417.215a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-701.598 -300.194)" fill="#8DCC95"/>
+                                              <path id="Path_52" data-name="Path 52" d="M635.243,417.215a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-565.262 -300.194)" fill="#8DCC95"/>
+                                              <path id="Path_53" data-name="Path 53" d="M89.1,276.82H55.065v38.546a5.544,5.544,0,0,1-5.537,5.537H39.386a5.543,5.543,0,0,1-5.537-5.537V277.23a10.337,10.337,0,0,0-7.556,9.9v32.213A10.321,10.321,0,0,0,36.6,329.653H89.1a10.32,10.32,0,0,0,10.309-10.309V287.13A10.324,10.324,0,0,0,89.1,276.82Zm-3.169,7.25a4.139,4.139,0,1,1-4.138,4.14A4.145,4.145,0,0,1,85.93,284.07Zm-9.279,0a4.139,4.139,0,1,1-4.138,4.14A4.145,4.145,0,0,1,76.651,284.07Zm-9.278,0a4.139,4.139,0,1,1-4.138,4.14A4.145,4.145,0,0,1,67.373,284.07Zm0,27.315a4.139,4.139,0,1,1,4.14-4.138A4.143,4.143,0,0,1,67.373,311.385Zm.072-9.518a4.139,4.139,0,1,1,4.141-4.139A4.144,4.144,0,0,1,67.445,301.867Zm9.206,1.24a4.139,4.139,0,1,1-4.138,4.14A4.146,4.146,0,0,1,76.651,303.107Zm.072,17.8a4.138,4.138,0,1,1,4.14-4.138A4.143,4.143,0,0,1,76.722,320.9Zm0-19.035a4.139,4.139,0,1,1,4.138-4.139A4.146,4.146,0,0,1,76.724,301.867Zm9.206,9.518a4.139,4.139,0,1,1,4.14-4.138A4.143,4.143,0,0,1,85.93,311.385ZM86,301.867a4.139,4.139,0,1,1,4.14-4.139A4.144,4.144,0,0,1,86,301.867Z" transform="translate(0 -171.188)" fill="#8DCC95"/>
+                                              <path id="Path_54" data-name="Path 54" d="M782.007,566.611A2.61,2.61,0,1,1,779.4,564a2.61,2.61,0,0,1,2.61,2.61" transform="translate(-702.675 -440.071)" fill="#8DCC95"/>
+                                              <path id="Path_55" data-name="Path 55" d="M927.683,566.611a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-839.069 -440.071)" fill="#8DCC95"/>
+                                              <path id="Path_56" data-name="Path 56" d="M926.487,715.961a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-837.949 -579.905)" fill="#8DCC95"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">215</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.063" height="70.313" viewBox="0 0 39.063 70.313">
+                                            <path id="noun-phone-cell-1027118-F3735B" d="M351.915,160.542v-3.789a6.815,6.815,0,0,1,2.02-4.819,6.9,6.9,0,0,1,4.857-2h25.295a6.923,6.923,0,0,1,4.857,2,6.792,6.792,0,0,1,2.02,4.819v3.789Zm23.51-6.261a.582.582,0,0,0-.581-.577h-6.822a.577.577,0,1,0,0,1.153h6.822A.582.582,0,0,0,375.425,154.281Zm15.526,7.414v44.362H351.915V161.7Zm0,45.516v6.206a6.815,6.815,0,0,1-2.02,4.819,6.9,6.9,0,0,1-4.857,2H358.779a6.923,6.923,0,0,1-4.857-2,6.792,6.792,0,0,1-2.02-4.819v-6.206Zm-19.511,3.68a2.86,2.86,0,0,0-2.02.838,2.8,2.8,0,0,0,0,4.009,2.856,2.856,0,0,0,4.041,0,2.8,2.8,0,0,0,0-4.009A2.86,2.86,0,0,0,371.44,210.891Z" transform="translate(-351.902 -149.929)" fill="#8DCC95" fill-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">15</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="69.235" height="69.235" viewBox="0 0 69.235 69.235">
+                                            <path id="noun-key-5227169-F3735B" d="M303.05,309.881,276.715,336.1a2.923,2.923,0,0,0-.006,4.128l8.208,8.238a2.892,2.892,0,0,0,4.1,0l2.052-2.06,2.055,2.06a2.891,2.891,0,0,0,4.1,0l8.208-8.238a2.917,2.917,0,0,0,0-4.119l-2.037-2.045,11.935-11.809a21.882,21.882,0,1,0-12.289-12.378ZM331.03,294.2a10.154,10.154,0,1,0,0,14.387A10.117,10.117,0,0,0,331.03,294.2Z" transform="translate(-275.859 -280.089)" fill="#8DCC95" fill-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">215</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-cards">
+                        <div class="bg-green text-center">
+                            <h2>bravo site</h2>
+                        </div>
+                        <div class="card-section d-flex align-items-center justify-content-between">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="73.001" height="68.635" viewBox="0 0 73.001 68.635">
+                                            <g id="Group_151" data-name="Group 151" transform="translate(-20651 2524.72)">
+                                              <path id="Path_44" data-name="Path 44" d="M146.238,264.33H78.411a2.594,2.594,0,0,0-2.587,2.587v50.03a2.594,2.594,0,0,0,2.587,2.587H103.02v8.259H95.366a2.587,2.587,0,0,0,0,5.173h33.91a2.587,2.587,0,0,0,0-5.173h-7.653v-8.259h24.615a2.594,2.594,0,0,0,2.587-2.587v-50.03a2.594,2.594,0,0,0-2.587-2.587Zm-38.045,63.463v-8.256h8.256v8.256Z" transform="translate(20575.176 -2789.05)" fill="#8DCC95"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">152</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="93.995" height="57.679" viewBox="0 0 93.995 57.679">
+                                            <path id="noun-laptop-5222411-F3735B" d="M28.006,273.53H98.772v46.124H28.006Zm-3.085,57.679-8.53-8.713h94l-8.53,8.713Z" transform="translate(-16.391 -273.53)" fill="#8DCC95" fill-rule="evenodd"/>
+                                          </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">35</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="73.116" height="64.483" viewBox="0 0 73.116 64.483">
+                                            <g id="noun-telephone-1709362-F3735B" transform="translate(-26.292 -93.982)">
+                                              <path id="Path_45" data-name="Path 45" d="M182.957,143.791a4.544,4.544,0,0,1-4.548,4.543h-9.657a4.541,4.541,0,0,1-4.545-4.543V98.527a4.545,4.545,0,0,1,4.545-4.545h9.657a4.547,4.547,0,0,1,4.548,4.545Z" transform="translate(-129.127 0)" fill="#8DCC95"/>
+                                              <path id="Path_46" data-name="Path 46" d="M636.373,566.611a2.61,2.61,0,1,1-2.61-2.61,2.611,2.611,0,0,1,2.61,2.61" transform="translate(-566.32 -440.071)" fill="#8DCC95"/>
+                                              <path id="Path_47" data-name="Path 47" d="M635.243,715.961a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-565.262 -579.905)" fill="#8DCC95"/>
+                                              <path id="Path_48" data-name="Path 48" d="M782,865.388a2.609,2.609,0,1,1-2.609-2.609A2.609,2.609,0,0,1,782,865.388" transform="translate(-702.673 -719.812)" fill="#8DCC95"/>
+                                              <path id="Path_49" data-name="Path 49" d="M780.857,715.961a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-701.598 -579.905)" fill="#8DCC95"/>
+                                              <path id="Path_50" data-name="Path 50" d="M926.487,417.215a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-837.949 -300.194)" fill="#8DCC95"/>
+                                              <path id="Path_51" data-name="Path 51" d="M780.857,417.215a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-701.598 -300.194)" fill="#8DCC95"/>
+                                              <path id="Path_52" data-name="Path 52" d="M635.243,417.215a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-565.262 -300.194)" fill="#8DCC95"/>
+                                              <path id="Path_53" data-name="Path 53" d="M89.1,276.82H55.065v38.546a5.544,5.544,0,0,1-5.537,5.537H39.386a5.543,5.543,0,0,1-5.537-5.537V277.23a10.337,10.337,0,0,0-7.556,9.9v32.213A10.321,10.321,0,0,0,36.6,329.653H89.1a10.32,10.32,0,0,0,10.309-10.309V287.13A10.324,10.324,0,0,0,89.1,276.82Zm-3.169,7.25a4.139,4.139,0,1,1-4.138,4.14A4.145,4.145,0,0,1,85.93,284.07Zm-9.279,0a4.139,4.139,0,1,1-4.138,4.14A4.145,4.145,0,0,1,76.651,284.07Zm-9.278,0a4.139,4.139,0,1,1-4.138,4.14A4.145,4.145,0,0,1,67.373,284.07Zm0,27.315a4.139,4.139,0,1,1,4.14-4.138A4.143,4.143,0,0,1,67.373,311.385Zm.072-9.518a4.139,4.139,0,1,1,4.141-4.139A4.144,4.144,0,0,1,67.445,301.867Zm9.206,1.24a4.139,4.139,0,1,1-4.138,4.14A4.146,4.146,0,0,1,76.651,303.107Zm.072,17.8a4.138,4.138,0,1,1,4.14-4.138A4.143,4.143,0,0,1,76.722,320.9Zm0-19.035a4.139,4.139,0,1,1,4.138-4.139A4.146,4.146,0,0,1,76.724,301.867Zm9.206,9.518a4.139,4.139,0,1,1,4.14-4.138A4.143,4.143,0,0,1,85.93,311.385ZM86,301.867a4.139,4.139,0,1,1,4.14-4.139A4.144,4.144,0,0,1,86,301.867Z" transform="translate(0 -171.188)" fill="#8DCC95"/>
+                                              <path id="Path_54" data-name="Path 54" d="M782.007,566.611A2.61,2.61,0,1,1,779.4,564a2.61,2.61,0,0,1,2.61,2.61" transform="translate(-702.675 -440.071)" fill="#8DCC95"/>
+                                              <path id="Path_55" data-name="Path 55" d="M927.683,566.611a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-839.069 -440.071)" fill="#8DCC95"/>
+                                              <path id="Path_56" data-name="Path 56" d="M926.487,715.961a2.61,2.61,0,1,1-2.61-2.61,2.61,2.61,0,0,1,2.61,2.61" transform="translate(-837.949 -579.905)" fill="#8DCC95"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">215</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="39.063" height="70.313" viewBox="0 0 39.063 70.313">
+                                            <path id="noun-phone-cell-1027118-F3735B" d="M351.915,160.542v-3.789a6.815,6.815,0,0,1,2.02-4.819,6.9,6.9,0,0,1,4.857-2h25.295a6.923,6.923,0,0,1,4.857,2,6.792,6.792,0,0,1,2.02,4.819v3.789Zm23.51-6.261a.582.582,0,0,0-.581-.577h-6.822a.577.577,0,1,0,0,1.153h6.822A.582.582,0,0,0,375.425,154.281Zm15.526,7.414v44.362H351.915V161.7Zm0,45.516v6.206a6.815,6.815,0,0,1-2.02,4.819,6.9,6.9,0,0,1-4.857,2H358.779a6.923,6.923,0,0,1-4.857-2,6.792,6.792,0,0,1-2.02-4.819v-6.206Zm-19.511,3.68a2.86,2.86,0,0,0-2.02.838,2.8,2.8,0,0,0,0,4.009,2.856,2.856,0,0,0,4.041,0,2.8,2.8,0,0,0,0-4.009A2.86,2.86,0,0,0,371.44,210.891Z" transform="translate(-351.902 -149.929)" fill="#8DCC95" fill-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">15</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="69.235" height="69.235" viewBox="0 0 69.235 69.235">
+                                            <path id="noun-key-5227169-F3735B" d="M303.05,309.881,276.715,336.1a2.923,2.923,0,0,0-.006,4.128l8.208,8.238a2.892,2.892,0,0,0,4.1,0l2.052-2.06,2.055,2.06a2.891,2.891,0,0,0,4.1,0l8.208-8.238a2.917,2.917,0,0,0,0-4.119l-2.037-2.045,11.935-11.809a21.882,21.882,0,1,0-12.289-12.378ZM331.03,294.2a10.154,10.154,0,1,0,0,14.387A10.117,10.117,0,0,0,331.03,294.2Z" transform="translate(-275.859 -280.089)" fill="#8DCC95" fill-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-title">215</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-reports" role="tabpanel" aria-labelledby="pills-reports-tab">
+                    Reports section
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+        <footer>
+            <p class="text-center franklin">© Christian Wright Development </p>
+        </footer>
+    <!-- FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/assets/js/index.js"></script>
+</body>
+</html>

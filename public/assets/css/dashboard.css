@@ -1,0 +1,511 @@
+/* .dashboard{
+    height: calc(100vh - 49px);
+} */
+.sidebar{
+    padding-top: 20px;
+    background: #F3735B;
+    min-width: 193px;
+    /* height: 100%; */
+}
+.sidebar-logo{
+    margin-bottom: 43px;
+}
+.sidebar .nav-item{
+    width: 177px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.sidebar .nav-link{
+    color: rgb(250, 250, 250, 69%);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'roboto';
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 12px;
+}
+.sidebar .nav-link span{
+    margin-left: 12px;
+}
+.sidebar .nav-link.active{
+    background: #fff;
+    color: #F3735B !important;
+}
+.sidebar .nav-link.active svg path{
+    fill: #F3735B !important;
+    opacity: 1 !important;
+}
+
+.main{
+    padding-right: 41px;
+    padding-left: 41px;
+}
+.main h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'roboto';
+    color: #000;
+    margin-bottom: 37px;
+    margin-top: 37px;
+    margin-left: 22px;
+}
+.main .search-bar input{
+    padding-left: 61px;
+    color: #000;
+    height: 48px;
+    border-radius: 25px;
+    background: transparent;
+    min-width: 479px;
+}
+.main .search-bar img{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.main .nav {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #242424;
+}
+.main .nav .nav-item{
+    margin-right: 60px;
+}
+.main .nav .nav-item:last-child{
+    margin-right: 0;
+}
+.main .nav .nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'roboto';
+    color: #000;
+    padding-left: 0;
+    padding-right: 0;
+}
+.main .nav .nav-item .nav-link.active{
+    background: transparent !important;
+    font-weight: bold;
+}
+.overview-section{
+    margin-top: 70px;
+    margin-bottom: 51px;
+}
+.overview-section .card{
+    border: 0;
+    margin-right: 92px;
+    margin-bottom: 51px;
+    width: 245px;
+    height: 255px;
+}
+.overview-section .card:last-child{
+    margin-right: 0;
+}
+.overview-section .card .card-body{
+    text-align: center;
+    font-family: 'roboto';
+    background: rgb(217, 215, 215, 16%);
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 1px solid rgb(112, 112, 112, 16%);
+    padding: 12px 0;
+    padding-bottom: 0;
+}
+.overview-section .card-link{
+    background: #F3735B;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overview-section .card-title{
+    font-size: 53px;
+    font-family: 'roboto';
+    margin-bottom: 0;
+    line-height: 60px;
+}
+.overview-section .card-text{
+    font-size: 20px;
+    font-family: 'roboto';
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.overview-section .card-link a{
+    display: block;
+    font-size: 12px;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-family: 'roboto';
+}
+.assets-section{
+    width: 353px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background: rgb(217, 215, 215, 16%);
+    margin-bottom: 42px;
+    margin-right: 50px;
+    box-shadow: 3px 3px 10px rgb(243, 115, 91, 16%);
+}
+.assets-section h3{
+    font-size: 20px;
+    font-family: 'roboto';
+    font-weight: 600;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.assets-section table{
+    margin-top: 19px;
+}
+.assets-section table th{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 28px;
+    text-transform: uppercase;
+}
+.assets-section table td{
+    font-size: 20px;
+    font-weight: bold;
+    color: #1F2B37;
+    opacity: .69;
+    padding-bottom: 20px;
+    line-height: 28px;
+}
+.assets-section table td.total-amount{
+    opacity: 1;
+    font-size: 25px;
+}
+.assets-tab,
+.assets-specific-type{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.assets-section.large{
+    min-width: 700px;
+}
+
+.assets-section.asset-large{
+    min-width: 584px;
+    margin-bottom: 100px;
+}
+.assets-section.asset-small{
+    width: 246px;
+    height: 314px;
+}
+.assets-section.asset-large table{
+    margin-right: 46px;
+}
+.assets-section.asset-large table tr th:first-child,
+.assets-section.asset-large table tr td:first-child{
+    text-align: start !important;
+}
+.assets-section .more{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'roboto';
+}
+
+
+
+/* PAGINATION */
+/* Pagination. */
+.pagination {
+	margin-bottom: 1rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+    width: fit-content;
+    margin-left: auto;
+}
+
+#numbers {
+	padding: 0;
+	margin: 0 2rem;
+	list-style-type: none;
+	display: flex;
+}
+
+#numbers li a {
+	color: #1F2B37;
+	text-decoration: none;
+    padding-right: 14px;
+	opacity: .69;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
+#numbers li a:hover {
+	opacity: 1;
+}
+#numbers li a.active {
+    opacity: .5;
+	color: #1F2B37;
+}
+
+.product-detail .title{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'roboto';
+    color: #1F2B37;
+    opacity: .91;
+    margin-bottom: 8px;
+}
+.product-detail .desc{
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'roboto';
+    color: #1F2B37;
+    opacity: .91;
+    margin-bottom: 0;
+}
+
+/* New Asset */
+.new-asset{
+    margin-bottom: 44px;
+}
+.new-asset .left{
+    padding: 20px;
+    background-color: rgb(217, 215, 215, 16%);
+    border: 1px solid rgb(112, 112, 112, 16%);
+    box-shadow: 3px 3px 10px rgb(243, 115, 91, 16%);
+    height: 100%;
+}
+.new-asset .left .carousel{
+    margin-bottom: 80px;
+}
+.new-asset .carousel .carousel-indicators button{
+    width: 13px !important;
+    height: 14px !important;
+}
+.new-asset .carousel .carousel-item h4{
+    font-size: 28px !important;
+    margin-top: 50px;
+}
+
+.new-asset .right .form-group label{
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1F2B37;
+    opacity: .91;
+}
+.new-asset .right .form-group select{
+    background-image: url("../images/icons/orange-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 97% 62%;
+    background-size: auto;
+}
+.new-asset .right .form-group{
+    margin-bottom: 20px;
+}
+.new-asset .right .form-group input{
+    background: rgb(220, 220, 220, 50%) !important;
+    border: 0;
+}
+.new-asset h4{
+    font-size: 26px;
+    font-weight: bold;
+    color: #1F2B37;
+    opacity: .91;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 72px;
+}
+.new-asset{
+    font-family: 'roboto';
+}
+.new-asset .btn{
+    min-width: 167px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'raleway';
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #F9F9FA;
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 16%);
+    border-radius: 3px;
+    margin-top: 48px;
+}
+
+.new-asset .right .labeled{
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'roboto';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 1550px){
+    .assets-section{
+        margin-right: 28px;
+    }
+}
+
+@media (max-width: 1400px){
+    .assets-section{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 991px){
+    .assets-section.large {
+        min-width: 100% !important;
+    }
+    .sidebar .nav-item {
+        width: auto;
+        margin: unset;
+        margin-bottom: 50px;
+    }
+    .sidebar .nav-link span {
+        font-size: 16px;
+    }
+    .sidebar .nav-link{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .overview-section {
+        justify-content: center;
+    }
+    .overview-section .card-title {
+        font-size: 42px;
+    }
+    .overview-section .card-text {
+        font-size: 16px;
+    }
+    .assets-section {
+        width: 100%;
+    }
+    #pills-tab{
+        display: none;
+    }
+    .assets-tab, .assets-specific-type{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .assets-tab .assets-section.asset-large{
+        min-width: 100%;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .detailed-asset h3 {
+        font-size: 26px;
+    }
+    .notes .btn {
+        width: 148px !important;
+        height: 48px !important;
+    }
+    .assets-section table th,
+    .assets-section table td {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .assets-section.asset-small {
+        width:100%;
+    }
+}
+
+@media (max-width: 767px){
+    .overview-section{
+        justify-content: space-between !important;
+    }
+    .overview-section .card {
+        margin-right: 0 !important;
+        width: 175px !important;
+        height: 225px !important;
+    }
+    .assets-section h3 {
+        font-size: 12px;
+    }
+    .assets-section a svg{
+        width: 80px;
+    }
+    .main h1 {
+        font-size: 20px;
+    }
+    .main .search-bar{
+        width: 140px !important;
+    }
+    .main .search-bar input{
+        min-width: 140px !important;
+        height: 20px;
+        padding-left: 28px;
+    }
+    .main .search-bar img{
+        width: 10px;
+        left: 10px;
+    }
+    .assets-tab, .assets-specific-type {
+        padding-left: 0px;
+        padding-right: 0;
+    }
+    .history-notes-section .history li .date {
+        font-size: 18px;
+    }
+    .history-notes-section .history li .title {
+        font-size: 16px;
+    }
+    .history-notes-section .history li .desc {
+        font-size: 14px;
+    }
+    .history-notes-section ul{
+        padding-left: 0px;
+    }
+    .history.notes{
+        padding-left: 0 !important;
+        margin-left: 12px !important;
+    }
+    .assets-section .new-table{
+        overflow: auto;
+    }
+    .assets-section .new-table table{
+        width: 700px !important;
+    }
+    .assets-section.asset-large {
+        min-width: 100%;
+    }
+    .product-detail .desc {
+        font-size: 12px;
+    }
+    .assets-section .more {
+        font-size: 14px;
+    }
+    /* .assets-section {
+        width: 200px;
+    } */
+    .new-category img{
+        width: 110px;
+    }
+    .assets-section.asset-large .product-detail .col-3{
+        padding-left: 6px;
+        padding-right: 6px;       
+    }
+    .main{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 992px){
+    header{
+        display: none;
+    }
+}
